@@ -7,61 +7,78 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
     <title>My Dashboard</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#">Latitude</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
 
+    <body>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">Latitude</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="#"> Data <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#"> Comparison </a>
-        </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Plots
+          Plots
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">vs. Max Temperature</a>
-            <a class="dropdown-item" href="#">vs. Humidity</a>
-            <a class="dropdown-item" href="#">vs. Cloudiness</a>
-            <a class="dropdown-item" href="#">vs. Wind Speed</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">All Plots</a>
+            <a class="dropdown-item" href="visualization-pages/max_temp.html">vs. Max Temperature</a>
+            <a class="dropdown-item" href="visualization-pages/humidity.html">vs. Humidity</a>
+            <a class="dropdown-item" href="visualization-pages/cloudiness.html">vs. Cloudiness</a>
+            <a class="dropdown-item" href="visualization-pages/windspeed.html">vs. Wind Speed</a>
           </div>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" href="visualization-pages/comparisons_page.html"> 
+            Comparison 
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="visualization-pages/data_page.html"> 
+            Data 
+          </a>
+        </li>
       </ul>
-      <form class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-      </form>
     </div>
   </nav>
-      <header class="header">
-        <h1>Latitude vs. X</h1>
-      </header>
-      <main>
-        <section class="posts">
-          <article class="post">
-            <h3>Summary</h3>
-            <p>
-              The purpose of this project was to analyze how weather changes as you get closer to the equator. 
-              To accomplish this analysis, we first pulled data from OpenWeatherMap API to assemble a dataset of over 500 cities. 
-              After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude. Factors we looked at included: 
-              temperature, cloudiness, wind speed, and humidity. This site provides the source data and visualizations created as a part of the analysis, 
-              as well as explanations and descriptions of any trends and correlations witnessed.
-            </p>
-        </section>
-      </main>
-    </div>
+
+    <!-- Row 4 -->
+    <div class="row">
+      <div class="col-md-12">
+      <div class="jumbotron">
+      <h2 class="display-4">Latitude vs. X</h2>
+      <p class="lead"></p>Summary</p>
+          
+          <p>
+            The purpose of this project was to analyze how weather changes as you get closer to the equator. 
+            To accomplish this analysis, we first pulled data from OpenWeatherMap API to assemble a dataset of over 500 cities. 
+            After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude. Factors we looked at included: 
+            temperature, cloudiness, wind speed, and humidity. This site provides the source data and visualizations created as a part of the analysis, 
+            as well as explanations and descriptions of any trends and correlations witnessed.
+          </p>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+          <div class="jumbotron">
+          <h2 class="display-4">Visualizations</h2>
+          <p class="lead"></p>Click Visualization to Analyze:</p>
+          <a target="_blank" href="assets/Fig1.png">
+            <img src="assets/Fig1.png" alt="Max Temperature Map">
+          </a>
+          <a target="_blank" href="assets/Fig2.png">
+            <img src="assets/Fig2.png" alt="Humidity Map">
+          </a>
+          <a target="_blank" href="assets/Fig3.png">
+            <img src="assets/Fig3.png" alt="Cloudiness Map">
+          </a>
+          <a target="_blank" href="assets/Fig4.png">
+            <img src="assets/Fig4.png" alt="Wind Speed Map">
+          </a>
+        </div>
   
 
     <!-- Optional JavaScript -->
