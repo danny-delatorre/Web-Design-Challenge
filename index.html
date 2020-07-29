@@ -6,19 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
-    <title>My Dashboard</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <title>Latitude Dashboard</title>
   </head>
   <body>
 
+    <!-- Navbar -->
+
     <body>
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="index.html">Latitude</a>
+        <a class="navbar-brand" href="">Latitude</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-    
+
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html"> Home <span class="sr-only">(current)</span></a>
+            </li>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item dropdown">
@@ -46,13 +54,13 @@
     </div>
   </nav>
 
-    <!-- Row 4 -->
+    <!-- First Jumbotron-->
     <div class="row">
-      <div class="col-md-12">
+      <div class="col-md-8">
       <div class="jumbotron">
-      <h2 class="display-4">Latitude vs. X</h2>
-      <p class="lead"></p>Summary</p>
-          
+      <h2 class="display-4">Summary: Latitude vs. X Dashboard</h2>
+      <p class="lead">
+      </p></p>
           <p>
             The purpose of this project was to analyze how weather changes as you get closer to the equator. 
             To accomplish this analysis, we first pulled data from OpenWeatherMap API to assemble a dataset of over 500 cities. 
@@ -61,26 +69,66 @@
             as well as explanations and descriptions of any trends and correlations witnessed.
           </p>
         </div>
-        <div class="row">
-          <div class="col-md-12">
-          <div class="jumbotron">
-          <h2 class="display-4">Visualizations</h2>
-          <p class="lead"></p>Click Visualization to Analyze:</p>
-          <a target="_blank" href="assets/Fig1.png">
-            <img src="assets/Fig1.png" alt="Max Temperature Map">
-          </a>
-          <a target="_blank" href="assets/Fig2.png">
-            <img src="assets/Fig2.png" alt="Humidity Map">
-          </a>
-          <a target="_blank" href="assets/Fig3.png">
-            <img src="assets/Fig3.png" alt="Cloudiness Map">
-          </a>
-          <a target="_blank" href="assets/Fig4.png">
-            <img src="assets/Fig4.png" alt="Wind Speed Map">
-          </a>
-        </div>
-  
 
+      <!-- Second Jumbotron-->
+      <div class="row">
+        <div class="col-md-12">
+        <div class="jumbotron">
+        <h2 class="display-4">Visualizations</h2>
+
+
+      <!-- Thumbnails-->
+
+        <div class="container-md">
+          <h3 class="text-center"></h3>
+            <div class="row">
+              <h2>Click any plot to get an in-depth analysis.</h2>
+                <div class="col-md-4">
+                  <div class="thumbnail">
+                    <img src="assets/Fig1.png" alt="..." class="img-thumbnail">
+                  </div>
+                  <div class="caption">
+                      <h3>Max Temperature</h3>
+                      <p>vs. Latitude</p>
+                      <p><a href="visualization-pages/max_temp.html" class="btn btn-outline-primary" role="button">See More</a> 
+                        <a href="assets/Fig1.png" class="btn btn-secondary" role="button">Zoom</a></p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="thumbnail">
+                      <img src="assets/Fig2.png" alt="..." class="img-thumbnail">
+                    </div>
+                  <div class="caption">
+                      <h3>Humidity</h3>
+                      <p>vs. Latitude</p>
+                      <p><a href="visualization-pages/humidity.html" class="btn btn-outline-primary" role="button">See More</a> 
+                        <a href="assets/Fig2.png" class="btn btn-secondary" role="button">Zoom</a></p>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="thumbnail">
+                    <img src="assets/Fig3.png" alt="..." class="img-thumbnail">
+                  </div>
+                <div class="caption">
+                    <h3>Cloudiness</h3>
+                    <p>vs. Latitude</p>
+                    <p><a href="visualization-pages/cloudiness.html" class="btn btn-outline-primary" role="button">See More</a> 
+                      <a href="assets/Fig3.png" class="btn btn-secondary" role="button">Zoom</a></p>
+                </div>
+              </div>
+                <div class="col-md-4">
+                    <div class="thumbnail">
+                      <img src="assets/Fig4.png" alt="..." class="img-thumbnail">
+                    </div>
+                    <div class="caption">
+                        <h3>Windspeed</h3>
+                        <p>vs. Latitude</p>
+                        <p><a href="visualization-pages/windspeed.html" class="btn btn-outline-primary" role="button">See More</a> 
+                          <a href="assets/Fig4.png" class="btn btn-secondary" role="button">Zoom</a></p>
+                  </div>
+                </div>
+            </div>
+       
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

@@ -1,6 +1,6 @@
 /* Giving the body the specified background color, adding font sizes for the h1 and h3 elements we'll be using */
 body {
-  background: #cdcdcd(214, 18, 18);
+  background: #399bc9(214, 18, 18);
 }
 
 h1 {
@@ -13,17 +13,23 @@ h1 {
 }
 
 h2 {
-  font-size: 30px;
+  font-size: 2px;
 }
 
 h3 {
-  font-size: 30px;
+  font-size: 10px;
+}
+
+img {
+  width: 100%; 
+  height: 100%; 
+  object-fit: contain; 
 }
 
 /* Giving our navbar some padding and a background color */
 .navbar {
-  padding: 8px;
-  text-align: center;
+  padding: 2px;
+  text-align:center;
   background: #cdcdcd;
 }
 
